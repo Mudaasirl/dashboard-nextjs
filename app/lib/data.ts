@@ -23,7 +23,7 @@ export async function fetchRevenue() { noStore()
 
     const data = await sql<Revenue>`SELECT * FROM revenue`;
 
-     console.log('Data fetch completed after 3 seconds.',data);
+     
     
     return data.rows;
   } catch (error) {
